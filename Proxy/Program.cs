@@ -4,6 +4,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello");
+        Parallel.For(0, 10, i => OneFileAtATimeProxy.AppendAllText("A.txt", i + ", "));
     }
 }
