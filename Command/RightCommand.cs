@@ -7,4 +7,10 @@ class RightCommand : ICommand
         Console.Write("Right ");
         Program.x++;
     }
+
+    public void Undo()
+    {
+        Console.Write("Left ");
+        Program.x--;
+    }
 }

@@ -7,4 +7,10 @@ class DownCommand : ICommand
         Console.Write("Down ");
         Program.y--;
     }
+
+    public void Undo()
+    {
+        Console.Write("Up ");
+        Program.y++;
+    }
 }
